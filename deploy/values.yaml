@@ -7,5 +7,5 @@ name: echo
 owner: mario
 image:
   repository: zot.clockmost.com/meru/echo
-  digest: sha256:0000000000000000000000000000000000000000000000000000000000000000
-  tag: ""
+  digest: sha256:4c6f8c98f6033d61a10248bfd6768ff8a38bb14c14a5187af80f1d35e1d87396
+  tag: "11df7c3f1743"
