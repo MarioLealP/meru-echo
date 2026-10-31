@@ -4,7 +4,7 @@
 # first one the digest is a placeholder (Argo renders the app so the build runner comes up; the pod is refused, as no
 # image carries echo's signature yet).
 name: echo
-owner: "" # from the request
+owner: mario
 image:
   repository: zot.clockmost.com/meru/echo
   digest: sha256:0000000000000000000000000000000000000000000000000000000000000000
