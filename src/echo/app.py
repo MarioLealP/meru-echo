@@ -1,4 +1,4 @@
-"""echo: Placeholder app - GET /heartbeat answers ok"""
+"""The echo app."""
 
 from fastapi import FastAPI
 from fastapi.responses import PlainTextResponse
