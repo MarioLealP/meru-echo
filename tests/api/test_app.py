@@ -1,6 +1,6 @@
 import httpx2
 
-from echo.app import app
+from echo.api.app import app
 
 
 async def test_heartbeat():
