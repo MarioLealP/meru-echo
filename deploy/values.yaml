@@ -14,9 +14,15 @@ networkPolicy:
   enabled: true # only Caddy (from the node) gets in
   hostAddresses: [10.42.0.1/32] # the node: the kubelet's probes and Caddy on the host (no Docker range any more)
   egress: none
+  toNamespaces: [openobserve] # OTLP traces (cm-id0n); OpenObserve's policy lets this namespace in
   toAddresses:
     - { cidr: 192.168.10.110/32, ports: [443] } # Caddy: GlitchTip
 
 # Crash reports (D125): this app's GlitchTip project, which Shikigami made (it predates the marker's own DSN line).
 glitchtip:
   dsn: https://a53d398ce358411fba50c2501f2f2184@glitchtip.clockmost.com/9
+
+# Traces go to OpenObserve in-cluster (Service port 80 -> 5080; the SDK appends /v1/traces). The Basic-auth header comes
+# from the request's `otel-exporter-otlp-headers` secret (OTEL_EXPORTER_OTLP_HEADERS), which Janus writes to OpenBao.
+otel:
+  endpoint: http://openobserve.openobserve.svc/api/default
