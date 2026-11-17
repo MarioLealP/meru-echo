@@ -7,8 +7,8 @@ name: echo
 owner: mario
 image:
   repository: zot.clockmost.com/meru/echo
-  digest: sha256:71baf062504ab82f35df50334c9e785970ed6fdd3b020eaa087dcb5ca83fb23a
-  tag: "6e199eb459d1"
+  digest: sha256:82d7e6f5f1e4f9fb7a695fee21a816ebe15f80b776f8f5b7765f3ee38f0aa852
+  tag: "601b76defbea"
 
 networkPolicy:
   enabled: true # only Caddy (from the node) gets in
