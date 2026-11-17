@@ -1,5 +1,5 @@
 # This app's CI on Meru's runner (Sindri, namespace <app>-build: each job is its own pod). No credentials anywhere
-# here. Managed by Meru/nuwa-base (copier): change it there, Renovate opens the update PR.
+# here. Managed by Meru/nuwa-base (copier): change it there and tag it, Renovate opens the update PR in every app.
 # checks: every check scripts/check.sh runs locally - lint, format, types, lockfile, tests.
 # build: proves the image builds (BuildKit, nothing pushed) - on pull requests and main alike.
 # Releasing is not CI's job: meru-release builds main again in a pod spec this repo can't change, scans it, pushes,
