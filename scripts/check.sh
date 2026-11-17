@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Every check CI runs, runnable locally: lint, format, types, file size, TLS checks, the lockfile, pip-audit, tests.
+# Every check CI runs, runnable locally: lint, format, types, file size, layout, TLS checks, the lockfile, pip-audit, tests.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
